@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+table.m2 {
+    margin: 5px auto;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 7px black;
+    padding: 4px;
+}
+table.ir { border-spacing: 6px }
