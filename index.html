@@ -9,32 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
-    <div class="h">
-
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="sagvaris.mp4" type="video/mp4">
-        </video>
-    
-
-        <nav>
-            <ul>
-                <li><a href="https://hu.wikipedia.org/wiki/Kosárlabda">Hobbim</a></li>
-                <li><a href="orarend.html" class="btn btn-1">Órarend</a></li>
-                <li><a href="https://github.com/CsenkeySinkoBalint" class="btn btn-2">Github</a></li>
-                <li><a href="https://www.hackerrank.com/balintandras176" class="btn btn-3">HackerRank</a></li>
-                <li><a href="http://www.gyakg.u-szeged.hu/sagvari/">SZTE honlap</a></li>
-                <li><a href="házik.html">Házik</a></li>
-                
-            </ul>       
-        </nav>
-        <div class="content">
-            <h1>Csenkey Sinkó Bálint </h1>
-        
-            
-        </div>
+    <div class="teteje">
+    <form class="kereso">
+        <input type="search" placeholder="Minden" value="" id="search" onchange="openPage()" list="input">
+        <button type="submit" ><img src="kereso.png"></button>
+    </form>
+    <datalist id="input">
+        <option value="házi">házi</option>
+        <option value="github">github</option>
+        <option value="hackerrank">hackerrank</option>
+        <option value="órarend">órarend</option>
+        <option value="sztehonlap">sztehonlap</option>   
+    </datalist>
     </div>
-    
-</body>
-</html>
+    <script>
+        function openPage() {
+            var x = document.getElementById("search").value;
+            if (x === "házi"){
+                window.open("házik.html");
+            }
+            if (x === "github")
+                window.open("https://github.com/CsenkeySinkoBalint");
+            if (x === "hackerrank")
+                window.open("https://www.hackerrank.com/balintandras176?hr_r=1");
+            if (x === "órarend")
+                window.open("orarend.html");
+            if (x === "sztehonlap")
+                window.open("http://www.gyakg.u-szeged.hu/sagvari/");
+            }
+    </script>
